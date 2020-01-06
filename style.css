@@ -4,16 +4,54 @@ body
     color: white;
     margin: 0%;
 }
+::selection
+{
+    color: #292929;
+    background-color: white;
+}
 header
 {
     background-color: #262626;
     padding: 5px 30px 5px 30px;
     height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 iframe
 {
     border: 0;
     height: 70px;
+}
+/* unvisited link */
+a:link {
+    color: #76FF7A;
+}
+/* visited link */
+a:visited {
+    color: #76FF7A;
+}
+/* mouse over link */
+a:hover {
+    color: #B8FFB8;
+}
+/* selected link */
+a:active {
+    color: #B8FFB8;
+} 
+
+#header-text
+{
+    font-size: 35px;
+    color: white !important;
+}
+#header-page-title
+{
+    font-size: 20px;
+    margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #content
@@ -25,9 +63,24 @@ iframe
     border: #404040 2px solid;
     border-radius: 5px;
 }
-#header-text
+
+span.header-title-element
 {
-    font-size: 35px;
-    margin-top: 7.5px;
-    color: white !important;
+    margin: 0 10px 0 10px;
+}
+#game-block
+{
+    margin: 15px;
+    background-color: #292929;
+    padding: 10px;
+    border: #404040 2px solid;
+    border-radius: 5px;
+}
+#quote
+{
+    margin: 10px;
+    padding: 10px;
+    background-color: #383838;
+    color: #d6d6d6;
+    border-radius: 10px;
 }
