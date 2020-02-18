@@ -1,86 +1,89 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url(pixel-font.ttf);
+}
+
 body
 {
-    background-color: #292929;
+    background-color: rgb(24, 24, 24);
     color: white;
-    margin: 0%;
+    padding: 15px;
 }
-::selection
+a
 {
-    color: #292929;
-    background-color: white;
+    color:rgb(15, 238, 115);
 }
-header
+
+i.subinfo
 {
-    background-color: #262626;
-    padding: 5px 30px 5px 30px;
-    height: 60px;
+    color: grey;
+}
+
+span.special
+{
+    font-weight: bold;
+    color: rgb(15, 238, 15);
+}
+span.bad
+{
+    font-weight: bold;
+    color: rgb(238, 41, 15);
+}
+span.lang-sharp
+{
+    font-weight: bold;
+    color: rgb(46, 144, 255);
+}
+span.lang-js
+{
+    font-weight: bold;
+    color: rgb(255, 192, 17);
+}
+span.title
+{
+    font-weight: 900;
+    font-size: 40pt;
+    font-family: 'Press Start 2P';
+}
+span.subtitle
+{
+    font-weight: 600;
+    font-size: 20pt;
+    color: grey;
+}
+span.proj-title
+{
+    font-size: 20pt;
+}
+
+div.quote
+{
+    border: rgb(199, 199, 199) 1px solid;
+    border-radius: 15px;
+    color: rgb(199, 199, 199);
+    padding: 5px;
+}
+div.screenshot-container
+{
     display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-iframe
-{
-    border: 0;
-    height: 70px;
-}
-/* unvisited link */
-a:link {
-    color: #76FF7A;
-}
-/* visited link */
-a:visited {
-    color: #76FF7A;
-}
-/* mouse over link */
-a:hover {
-    color: #B8FFB8;
-}
-/* selected link */
-a:active {
-    color: #B8FFB8;
-} 
-
-#header-text
-{
-    font-size: 35px;
-    color: white !important;
-}
-#header-page-title
-{
-    font-size: 20px;
-    margin-left: 30px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    flex-flow: row wrap;
 }
 
-#content
+ul.bigger-text
 {
-    background-color: #2e2e2e;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 10px;
-    border: #404040 2px solid;
-    border-radius: 5px;
+    font-size: 20pt;
 }
 
-span.header-title-element
+img.screenshot
 {
-    margin: 0 10px 0 10px;
-}
-#game-block
-{
-    margin: 15px;
-    background-color: #292929;
-    padding: 10px;
-    border: #404040 2px solid;
-    border-radius: 5px;
-}
-#quote
-{
+    width: 100%;
+    max-width: 600px;
     margin: 10px;
-    padding: 10px;
-    background-color: #383838;
-    color: #d6d6d6;
-    border-radius: 10px;
+}
+img.screenshot-vert
+{
+    width: 100%;
+    max-width: 280px;
+    margin: 10px;
 }
