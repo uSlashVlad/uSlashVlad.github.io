@@ -3,87 +3,127 @@
     src: url(pixel-font.ttf);
 }
 
-body
-{
+body {
     background-color: rgb(24, 24, 24);
     color: white;
     padding: 15px;
 }
-a
-{
-    color:rgb(15, 238, 115);
+
+a {
+    color: rgb(15, 238, 115);
 }
 
-i.subinfo
-{
+a.source-card {
+    width: 50%;
+    max-width: 200px;
+    margin: 20px;
+    height: 220px;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+i.subinfo {
     color: grey;
 }
 
-span.special
-{
+span.special {
     font-weight: bold;
     color: rgb(15, 238, 15);
 }
-span.bad
-{
+
+span.bad {
     font-weight: bold;
     color: rgb(238, 41, 15);
 }
-span.lang-sharp
-{
+
+span.lang-sharp {
     font-weight: bold;
     color: rgb(46, 144, 255);
 }
-span.lang-js
-{
+
+span.lang-js {
     font-weight: bold;
     color: rgb(255, 192, 17);
 }
-span.title
-{
+
+span.lang-css {
+    font-weight: bold;
+    color: #842EE5;
+}
+
+span.title {
     font-weight: 900;
     font-size: 40pt;
     font-family: 'Press Start 2P';
 }
-span.subtitle
-{
+
+span.subtitle {
     font-weight: 600;
     font-size: 20pt;
     color: grey;
 }
-span.proj-title
-{
+
+span.proj-title {
     font-size: 20pt;
 }
 
-div.quote
-{
+p.add {
+    color: #98FB98;
+}
+
+p.remove {
+    color: #F78D8F;
+}
+
+p.edit {
+    color: #8DABF7;
+}
+
+div.quote {
     border: rgb(199, 199, 199) 1px solid;
     border-radius: 15px;
     color: rgb(199, 199, 199);
     padding: 5px;
+    max-width: 800px;
 }
-div.screenshot-container
-{
+
+div.quote-update {
+    border: rgb(15, 238, 15) solid;
+    border-width: 0 0 0 6px;
+    padding: 6px;
+    max-width: 600px;
+}
+
+div.flex-container {
     display: flex;
     flex-direction: column;
     flex-flow: row wrap;
 }
 
-ul.bigger-text
-{
+ul.bigger-text {
     font-size: 20pt;
 }
 
-img.screenshot
-{
+img.screenshot {
     width: 100%;
     max-width: 600px;
     margin: 10px;
 }
-img.screenshot-vert
-{
+
+img.screenshot-vert {
     width: 100%;
     max-width: 280px;
     margin: 10px;
+}
+
+img.ext-link-icons {
+    width: 50%;
+    max-width: 150px;
+}
+
+.card {
+    background-color: #2E2E2E;
 }
